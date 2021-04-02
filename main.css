@@ -50,5 +50,27 @@ body {
 
 .search:hover, .search:focus, .search:focus-within {
   width: 300px;
+  -webkit-box-shadow: 4px 8px 20px 1px rgba(0, 0, 0, 0.555);
+          box-shadow: 4px 8px 20px 1px rgba(0, 0, 0, 0.555);
+}
+
+.search:hover button, .search:focus button, .search:focus-within button {
+  color: orange;
+  -webkit-animation: r 500ms linear forwards;
+          animation: r 500ms linear forwards;
+}
+
+@-webkit-keyframes r {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes r {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
